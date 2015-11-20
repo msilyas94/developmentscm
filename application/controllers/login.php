@@ -27,6 +27,21 @@
 			
 		}
 
+		function newSupplier(){
+
+				$this->load->view('login/header_login');
+				echo "<script>alert('User anda telah terverifikasi, Silahkan login :)');</script>";
+				$this->load->view('login/admin/v_loginadmin');
+				$this->load->view('login/footer_login');
+		}
+
+		function register(){
+
+			
+			$this->load->view('login/v_register');
+			
+		}
+		 
 		function login_process(){ // Processing Username and ID
 
 			$result=$this->m_login->cek_userpass(
@@ -49,23 +64,6 @@
 	
 			}
 		}
-
-		function newSupplier(){
-
-				$this->load->view('login/header_login');
-				echo "<script>alert('User anda telah terverifikasi, Silahkan login :)');</script>";
-				$this->load->view('login/admin/v_loginadmin');
-				$this->load->view('login/footer_login');
-		}
-
-		function register(){
-
-			
-			$this->load->view('login/v_register');
-			
-		}
-		 
-	
 
 		function user_verification(){
 			

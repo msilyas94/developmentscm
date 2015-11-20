@@ -33,20 +33,6 @@ class supplier extends CI_Controller {
 	
 	}
 
-	public function exportExcel(){
-		$this->load->helper('download');
-		$this->load->dbutil();
-		$query = $this->db->query("SELECT * FROM smm02supplier");
-		$delimiter = ",";
-		$newline = "\r\n";
-		$enclosure = '"';
-
-		$data =  $this->dbutil->csv_from_result($query, $delimiter, $newline, $enclosure);
-		$name = 'report_mitra.csv';
-		force_download($name, $data);
-	 
-
-	}
 	public function viewAdd(){
 
 		$this->load->view('template/header');
@@ -54,7 +40,6 @@ class supplier extends CI_Controller {
 		$this->load->view('adminsite/v_addsupplier');
 		$this->load->view('template/footer');
 	}
-
 
 	public function addSupplier(){
 		

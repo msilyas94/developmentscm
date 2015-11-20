@@ -77,9 +77,7 @@
 														<input type="text" class="form-control" placeholder="Email" />
 													</th>
 													<th >
-														<form action="<?php echo base_url();?>index.php/supplier/exportExcel">
-															<button type="submit" class="btn btn-success">Export Excel <i class="fa fa-table"></i></button>
-														</form>
+														
 													</th>
 													<th class="hasinput" style="width:12%">
 														<form action="<?php echo base_url();?>index.php/supplier/viewAdd">
@@ -121,7 +119,7 @@
 									                </td>
 									                <td>
 									                <?php if ($row->is_assessment == 0){?>
-									           			<a href="supplier/doAssessment/<?php echo $row->supplier_id;?>"><button class="btn btn-info">lakukan Assessment !</button></a><p  style="color:red"><i>Supplier ini belum di Assessment</i></p> 
+									           			<a href="supplier/doAssessment/<?php echo $row->supplier_id;?>"><i class="fa fa-search"></i>  (Assessment)</a> 
 									                	<?php }else {echo "<i><strong>Supplier ini telah di Assessment</strong></i>";}?>
 									                </td>
 									            </tr>

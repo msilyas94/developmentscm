@@ -19,26 +19,12 @@
 		
 			<nav>
 				<ul>
-					
 					<li class="active">
 						<a href="<?php echo base_url();?>home" title="Supplier Dashboard"><i class="fa fa-lg fa-fw fa-dashboard"></i> <span class="menu-item-parent">Dashboard</span></a>
 					</li>
 
-
 					<li class="active">
-						<a href="#" title="Supplier List"><i class="fa fa-lg fa-fw fa-user"></i> <span class="menu-item-parent">User Management</span></a>
-						<ul>
-							<li>
-								<a href="<?php echo base_url();?>supplier">Manage User</a>
-							</li>
-
-
-						</ul>
-
-					</li>	
-
-					<li class="active">
-						<a href="#" title="Supplier List"><i class="fa fa-lg fa-fw fa-user"></i> <span class="menu-item-parent">Supplier Management</span></a>
+						<a href="#" title="Supplier List"><i class="fa fa-lg fa-fw fa-user"></i> <span class="menu-item-parent">Supplier</span></a>
 						<ul>
 							<li>
 								<a href="<?php echo base_url();?>supplier">Supplier List</a>
@@ -51,7 +37,7 @@
 						</ul>
 
 					</li>
-					
+
 
 					
 
