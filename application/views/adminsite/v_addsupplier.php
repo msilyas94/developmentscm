@@ -353,8 +353,8 @@
 																					<tr>
 																						<td>Akta Pendirian</td>
 																						<td><input name="akt_pend" class="form-control" type="text"></td>
-																						<td><input name="akt_pend_terbit"class type="date"></td>
-																						<td><input name="akt_pend_exp"class type="date"></td>
+																						<td><input name="akt_pend_terbit" class="datepicker" type="text"></td>
+																						<td><input name="akt_pend_exp" class="datepicker" type="text"></td>
 
 																					</tr>
 
